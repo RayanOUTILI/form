@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Formulaire</title>
+  </head>
+
+  <body>
+    <h1>Formulaire</h1>
+
+
+    <section>
+        <div class="container">
+            <form action=".php">
+            <fieldset>
+              <label for="nom">Nom</label>
+              <input type="text" id="nom" name="firstname" placeholder="Votre nom">
+            </fieldset>
+
+            <fieldset>
+              <label for="prenom">Prénom</label>
+              <input type="text" id="prenom" name="name" placeholder="Votre prénom">
+            </fieldset>
+            
+            <fieldset>
+              <label for="age">Age</label>
+              <input id="age" type="number" name="age" placeholder="Votre âge">
+            </fieldset>
+
+            <fieldset>
+                <legend>Civilité</legend>
+                <div class="radio-container">
+                  <label>
+                    <input type="radio" name="civility" value="monsieur">
+                    Monsieur
+                  </label>
+                  <label>
+                    <input type="radio" name="civility" value="madame">
+                    Madame
+                  </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+              <input type="submit" value="Envoyer">
+            </fieldset>
+            </form>
+          </div>
+    </section>
+    
+  </body>
+</html>
+
