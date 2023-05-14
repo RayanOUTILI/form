@@ -44,10 +44,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="text" id="nom" name="nom"><br>
         <label for="prenom">Prénom:</label><br>
         <input type="text" id="prenom" name="prenom"><br>
-        <label for="adresse_mail">Adresse e-mail:</label><br>
-        <input type="email" id="adresse_mail" name="adresse_mail"><br>
-        <label for="mot_de_passe">Mot de passe:</label><br>
-        <input type="password" id="mot_de_passe" name="mot_de_passe"><br><br>
+        <label for="adr_mail">Adresse e-mail:</label><br>
+        <input type="email" id="adr_mail" name="adr_mail"><br>
+        <label for="mdp">Mot de passe:</label><br>
+        <input type="password" id="mdp" name="mdp"><br><br>
         <input type="submit" value="Créer l'utilisateur">
     </form>
 </body>
