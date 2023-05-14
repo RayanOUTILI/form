@@ -1,0 +1,132 @@
+/*importation d'une police*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+
+/*définit la police par défaut de la page*/
+html
+{
+    font-family: Montserrat, sans-serif;
+}
+
+/*couleur du corps de la page*/
+body
+{
+    background-color: #EBF9FF;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+}
+
+/*permet les espaces entre les cadres du fond*/
+*,*:before,*:after
+{ 
+  box-sizing:  border-box;
+}
+
+/*retire toutes les marges par défaut de la page*/
+*
+{
+	margin-left:0;
+	margin-right:0;
+	padding:0;
+}
+
+/*modifie le style du titre de la page*/
+h1
+{
+  text-align: center;
+  padding-bottom: 25px;
+  display: block;
+  margin-top: 25px;
+  text-shadow:   -1px -1px 0 #000,  
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+   1px 1px 0 #000,
+   1px 1px 2px #141414,
+   1px 1px 3px #141414,
+   1px 1px 5px #141414,
+   1px 1px 7px #141414,
+   1px 1px 10px #141414,
+   1px 1px 12px #141414,
+   1px 1px 18px #141414;
+   color:#fff;
+}
+
+form{
+    width: 80%;
+    margin-left: 10%;
+    background-color: white;
+    box-shadow:0px 0px 0px 1px black;
+    border-radius: 10px;
+    border-radius: 10px;
+    height: auto;
+    padding:10px;
+}
+
+/*met du style à lentrée où l'on répond au form*/
+input{
+    background-color: rgb(221, 221, 221) ;
+    border-radius: 6px;
+    width: 100%;
+}
+/*retire les bordures*/
+fieldset{
+    border:none;
+}
+  
+input[type=text], textarea, input[type=number] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ceced3;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-right: 0px;
+    margin-left: 0px;
+    resize: vertical;
+}
+  
+input[type=submit] {
+    background-color: #1255a2;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: #1872D9;
+}
+  
+.container {
+    box-sizing : border-box;
+    border-radius:5px;
+    background-color:#b3fffc;
+    padding:20px;
+    width: 100%;
+    max-width: 440px;
+    margin:0 auto;
+}
+
+.radio-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+.radio-container input {
+    margin: 5px;
+    width: 10%;
+    margin-bottom: 10px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+}
+
+input:focus{
+    background-color: rgb(208, 208, 255);
+}

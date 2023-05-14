@@ -1,51 +1,56 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <style>
-    table {
-      width: 50%;
-      border-collapse: collapse;
-      margin: auto;
-      margin-top: 50px;
-    }
 
-    th, td {
-      padding: 8px;
-      text-align: left;
-      border-bottom: 1px solid #ddd;
-    }
+<html lang="fr">
+  <head>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Formulaire</title>
+  </head>
 
-    th {
-      background-color: #f2f2f2;
-      font-style: normal;
-      font-family: Arial sans-serif;
-    }
-    td {
-      font-family: Arial sans-serif;
-    }
-  </style>
-</head>
-<body>
-  <table>
-    <tr>
-      <th>Nom d'utilisateur</th>
-      <th>Nom</th>
-      <th>Prénom</th>
-      <th>Adresse e-mail</th>
-    </tr>
-    <tr>
-      <td>Utilisateur1</td>
-      <td>Nom1</td>
-      <td>Prénom1</td>
-      <td>email1@example.com</td>
-    </tr>
-    <tr>
-      <td>Utilisateur2</td>
-      <td>Nom2</td>
-      <td>Prénom2</td>
-      <td>email2@example.com</td>
-    </tr>
-    <!-- Ajoutez les autres utilisateurs ici -->
-  </table>
-</body>
+  <body>
+    <h1>Formulaire</h1>
+
+
+    <section>
+        <div class="container">
+            <form action=".php">
+            <fieldset>
+              <label for="nom">Nom</label>
+              <input type="text" id="nom" name="firstname" placeholder="Votre nom">
+            </fieldset>
+
+            <fieldset>
+              <label for="prenom">Prénom</label>
+              <input type="text" id="prenom" name="name" placeholder="Votre prénom">
+            </fieldset>
+            
+            <fieldset>
+              <label for="age">Age</label>
+              <input id="age" type="number" name="age" placeholder="Votre âge">
+            </fieldset>
+
+            <fieldset>
+                <legend>Civilité</legend>
+                <div class="radio-container">
+                  <label>
+                    <input type="radio" name="civility" value="monsieur">
+                    Monsieur
+                  </label>
+                  <label>
+                    <input type="radio" name="civility" value="madame">
+                    Madame
+                  </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+              <input type="submit" value="Envoyer">
+            </fieldset>
+            </form>
+          </div>
+    </section>
+    
+  </body>
 </html>
+
